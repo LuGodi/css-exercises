@@ -24,3 +24,31 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:32px;
+}
+.image-container{
+  display: flex;
+  gap:52px;
+  justify-content: center;
+
+  
+  
+}
+.image-container > *{
+  flex-basis:200px;
+  /* solution includes the width as max width, I think it works because default behavior is flex shrink it will shrink until 200px, flex grow is disabled by default but it wont make a difference ? */
+}
+
+.image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* should have included the text align center on the body */
+  flex-wrap: wrap;
+}

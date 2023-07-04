@@ -7,21 +7,33 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding:3px; /*here my padding is adding to the margin i set for the title*/
+ 
 }
 
 .title {
   background: #e3f4ff;
+  padding:10px;
+  margin:7px; /*i could have set top margin to 0 and bottom to 7 */
 }
 
 .content {
   background: #e3f4ff;
+  padding:16px 8px;
+  margin:7px; /* could have set margin bottom, here the top margin is collapsing so its fine and left right margin are adding to the padding i placed for the card*/
 }
 
 .button-container {
   background: #e3f4ff;
+  padding:10px;
+  margin:7px; /* since i set the padding for the card to 3px only I need this here to sum up to 10px which is roughly the ammount of the original*/
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display:block;
+  margin: 3px auto;
+  padding: 8px 30px;
 }

@@ -1,0 +1,14 @@
+/* esse eh o child selector, ele qria o descendant selector */
+/* div>.text {
+    background-color: yellow;
+    color:red;
+    font-size:20px;
+    text-align: center;
+} */
+
+div .text{
+    background-color:yellow;
+    color:red;
+    font-size:20px;
+    text-align:center;
+}

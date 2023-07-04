@@ -9,12 +9,23 @@
   </head>
   <body>
     <div class="modal">
-      <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <button class="close-button">✖</button>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
+      
+        <div class="icon">!</div>
+        <div class="main-content"><!-- esse main content n precisava virar flex column pq os elementos dentro dele primeiro eh o header q eh uma div e ela tem display block, dpois outra div com o texto q tb eh block e os dois botoes sao inline block ja ficaria tudo certinho. Precisava dela mas n ela virar flex, so pra ela agrupar tudo menos o icone-->
+        <div class="header">
+            <div class="title"> <!--essa div n eh necessaria, pode deletar que n muda nada -->
+              <h2>Are you sure you want to do that?</h2>
+              <button class="close-button">✖</button>
+            </div>
+        </div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+        <div class="continue-cancel-container"><!--so foi necessario pq o main content ta como flex column e ai o align fica stretch sem o main content como flex na vdd sem o main content msm n precisa dessa div-->
+        <button class="continue">Continue</button>
+        <button class="cancel">Cancel</button>
+        
+      </div>
+      </div>
+      
     </div>
   </body>
 </html>
