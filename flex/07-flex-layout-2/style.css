@@ -27,3 +27,64 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+body{
+  display:flex;
+  flex-direction: column;
+}
+
+.header{
+  padding: 0 16px;
+  display:flex;
+  align-items:center;
+  font-size:32px;
+  font-weight: 900;
+
+}
+.footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.content{
+  display:flex;
+  /*justify-content: center; */
+  /*ele n pos center, n precisa esqueci*/
+  flex:auto; /*ele pos 1 aqui acho que n faz diferenca */
+}
+
+.main-content {
+  display:flex;
+  flex-wrap:wrap;
+  gap:32px; /*ele n pos gap*/
+  padding:32px;
+
+}
+
+.sidebar {
+  flex:0 0 auto; /*ele pos so flex shrink, eu pus completo e dei auto pra ele olhar pro proprio valor, mas o initial eh auto entao da no msm */
+  padding:16px;
+}
+.sidebar a {
+  font-size: 24px;
+  color:white;
+  text-decoration:none;
+}
+li{ /*nao reparei que tinha isso*/
+  margin-bottom:16px;
+}
+.sidebar ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+
+.card {
+  /* margin:32px; */
+  padding:15px;
+  flex-basis:300px; /* ele pos como width */
+  /*ele pos margin 16px, como eu pus no meu card gap 16px ficou qse a mesma coisa exceto q com um pouco d mais espaço no top left dele 
+   so que ele pediu 32 d padding ao redor da parte de cards, o espaco vai ficar maior assim pq vai somar o padding do main content com o margin do card, acho que eu fiz mais certo*/
+}
