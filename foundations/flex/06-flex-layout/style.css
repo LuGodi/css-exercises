@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding:8px;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+}
+
+
+ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:#323232;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+}
+.footer {
+  background-color: #eee;
+}
+.left-links, .right-links {
+  display:flex; /*aqui ele usou o ul ao inves dessas duas classes*/
+  gap:20px;
+}
+
+
+.content {
+  
+  /* margin:auto; apesar do margin auto centralizar parece q n fica mto responsivo mas posso so n estar sabendo usar, vou pro flex grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex:auto; /*na resposta ta flex 1 mas acho que aqui da no msmm auto e 1*/
+}
